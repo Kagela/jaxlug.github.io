@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head> 
-    <title>JaxLUG IRC</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-        .w3-sidebar {
-          z-index: 3;
-          width: 250px;
-          top: 43px;
-          bottom: 0;
-          height: inherit;
-    }
-    </style>
+<head>
+	<title>JaxLUG IRC Channel</title>
+		<meta charset="UTF-8"/>
+		<meta name="generator" content="Bluefish 2.2.10" />
+		<meta name="viewport" content="width=devide-width, initial-scale=1.0"/>
+	
+		<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="My wiki (en)"/>
+		<link rel=“stylesheet” type=“text/css” href=“styles.css”>
+		<link rel="stylesheet" href="styles.css">	
 
 </head>
   
 <body>
-     
-<!-- Top Navbar from justified Left  black with white letters -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="/index.html" class="w3-bar-item w3-button w3-theme-l1"> Home  </a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">  IRC setup  </a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">  IRC verification  </a>
-  
-  </div>
+	<div class="main">
+    
+	<!-- LEFT side Navigation Menu    it uses the ID "#Name" to jump to that division   -->
+		<div class="sidenav">
+		<img src="images/JaxLugsmall.png" alt="JaxLug" style="align-items: center;">
+			<h2>Contents </h2>								
+				<ul style="list-style-type:none;">
+					<li><a href="/index.html"><span class="tocnumber"> </span> <span class="toctext"> Home </span></a></li>
+					<li><a href="#LiberaBasics"><span class="tocnumber"> </span> <span class="toctext"> LiberaChat basics </span></a></li>
+					<li><a href="#LiberaSettings"><span class="tocnumber"> </span> <span class="toctext"> LiberaChat settings </span></a></li>					
+			
+				</ul>
+		</div>  
+
+	<!-- Using the div class=main tag we are moving the content to the right.  So it does not cover the Right Menu   -->
+		<div class="w3-main" style="margin-left:25px">
+
+	<!-- Overlay effect when opening sidebar on small screens -->
+	<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+			
+	  <h1>IRC JaxLUG Channel: </h1>
+	  <hr>
+	  
+	    <h2 <span class="W3-text-teal id="LiberaBasics">LiberaChat Basics</span> <img src="LiberaIconSmall.png" alt=" " style="float:left;width:42px;height:42px;"> </h2>
+		
+	       <p>Connecting without installing anything. <br>
+	          If you cannot or do not wish to install a client on your computer, you can use a web client.<br> 
+	          Just select the top right conner "Connect" button and sellect WebChat.  </p>
+
+					<p>They also provide two web clients:<br>
+						KiwiIRC, a robust web client <br>
+						gamja, a lightweight web client </p>
+						
+					<p>OR you can use IRCCloud is a popular web client service that keeps you connected <br>
+						  after closing the page and has a limited free plan. It also has iOS and Android apps.
+			</p>
+	    
+	    
+	    <h2 <span class="W3-text-teal id="LiberaSettings">LiberaChat Settings</span> <img src="LiberaIconSmall.png" alt=" " style="float:left"> </h2> 
+	    
+	    <p>The IRC is no longer hosted on Freenode (evidently Freenode suffered a hostile takeover in 2021 and most of the staff left).<br> 
+	       <u>Link to article:</u> <br>
+	       https://arstechnica.com/gadgets/2021/05/freenode-irc-has-been-taken-over-by-the-crown-prince-of-korea/ </p>
+
+	    <p>Libera.Chat  is now hosting the IRC channel for #jaxlug</p>
+
+	    <p>You need to install a IRC chat client program like HexChat in your machine. <br>
+	       Setup a user name and nickname. Asper your prefered client program. <br>  
+	       login into your client program and search for the #jaxlug channel. 
+	    </p>
+
+	    <li>Depending on your IRC client program you might have to register your "nickname". <br> 
+	        some will require a confirmation email to be sent.  </li>
+			<br>
+	    <li>Copy the line in the email that looks like this:  <br>
+	        /msg NickServ VERIFY REGISTER <nickname> 
+    	     into the chat window, and you should see something like: <br>
+     	     <nickname> has now been verified. <br>
+
+	      That's it!</li>
+	    
 </div>
-
-
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-  <h1>IRC Instructions: </h1>
-  <hl>
-    <p>The IRC is no longer hosted on Freenode (evidently Freenode suffered a hostile takeover in 2021 and most of the staff left). https://arstechnica.com/gadgets/2021/05/freenode-irc-has-been-taken-over-by-the-crown-prince-of-korea/ </p>
-
-    <p>It is now hosted on Libera.Chat #jaxlug</p>
-
-    <p>So, fire up your IRC client of choice, look for the #jaxlug channel, and try out a nickname:
-           /nick <your proposed nickname> (you can't use robmckennon... that's mine!)  :)   </p>
-
-    <li>If successful, then register that nickname by:
-        /msg NickServ REGISTER <Pas$w0rd> <yourEmail@blah.com> (for a confirmation email to be sent) </li>
-
-    <li>Copy the line in the email that looks like this:
-        /msg NickServ VERIFY REGISTER <nickname> </li>
-
-    into the chat window, and you should see something like:
-
-    <nickname> has now been verified.
-
-      That's it!
-    </nickname>
 </body>
+		
 </html>
